@@ -7,7 +7,7 @@ const Footer2 = () => {
   const timeoutRef = useRef(null);
   const subTimeoutRef = useRef(null);
 
-  const customRed = '#B22222'; // Changed to firebrick
+  const customRed = '#D62039'; // Changed to custom red
 
   const menuItems = {
     about: ['Recent Projects', 'Design/Consulting'],
@@ -89,7 +89,7 @@ const Footer2 = () => {
             {hoveredItem === 'about' && (
               <div 
                 className="absolute bottom-full left-0 mb-1 w-56 border rounded-lg shadow-lg z-50"
-                style={{ backgroundColor: customRed, borderColor: '#A00000' }}
+                style={{ backgroundColor: customRed, borderColor: '#C01E36' }}
                 onMouseEnter={() => handleDropdownMouseEnter('about')}
                 onMouseLeave={handleDropdownMouseLeave}
               >
@@ -163,7 +163,7 @@ const Footer2 = () => {
             {hoveredItem === 'categories' && (
               <div 
                 className="absolute bottom-full left-0 mb-1 w-64 border rounded-lg shadow-lg z-50"
-                style={{ backgroundColor: customRed, borderColor: '#A00000' }}
+                style={{ backgroundColor: customRed, borderColor: '#C01E36' }}
                 onMouseEnter={() => handleDropdownMouseEnter('categories')}
                 onMouseLeave={handleDropdownMouseLeave}
               >
@@ -189,7 +189,7 @@ const Footer2 = () => {
                       {hoveredSubcategory === category && subcategories.length > 0 && (
                         <div 
                           className="absolute bottom-0 left-full ml-1 w-56 border rounded-lg shadow-lg z-60"
-                          style={{ backgroundColor: customRed, borderColor: '#A00000' }}
+                          style={{ backgroundColor: customRed, borderColor: '#C01E36' }}
                           onMouseEnter={() => handleSubcategoryMouseEnter(category)}
                           onMouseLeave={handleSubcategoryMouseLeave}
                         >
@@ -241,7 +241,7 @@ const Footer2 = () => {
             {hoveredItem === 'account' && (
               <div 
                 className="absolute bottom-full right-0 mb-1 w-56 border rounded-lg shadow-lg z-50"
-                style={{ backgroundColor: customRed, borderColor: '#A00000' }}
+                style={{ backgroundColor: customRed, borderColor: '#C01E36' }}
                 onMouseEnter={() => handleDropdownMouseEnter('account')}
                 onMouseLeave={handleDropdownMouseLeave}
               >
