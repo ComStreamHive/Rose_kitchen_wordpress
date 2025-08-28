@@ -7,7 +7,7 @@ import payment from '../assets/payment1.svg'
 
 const Footer1 = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-8">
+    <footer className="bg-white border-t border-gray-200 py-8  mt-10">
       <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
         {/* Logo Section - Left Side */}
         <div className="flex items-center">

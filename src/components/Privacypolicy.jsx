@@ -1,7 +1,15 @@
 import React from 'react';
+import Navbar from './Navbar1'
+import Navbar2 from './Navbar2'
+import Footer1 from './Footer1'
+import Footer2 from './Footer2'
+import Footer3 from './Footer3'
 
 const PrivacyPolicy = () => {
   return (
+    <>
+    <Navbar/>
+    <Navbar2/>
     <div className="w-full bg-white px-4 sm:px-6 md:px-12 lg:px-24 py-8">
       <div className="w-full">
         <h1 className="text-2xl md:text-3xl font-bold text-red-600 mb-6 text-left md:text-left">
@@ -47,89 +55,100 @@ const PrivacyPolicy = () => {
         
 
           <h2 className="text-xl font-bold text-gray-800">3. Automatic Data Collection</h2>
+          
           <p>
-            Contents: from this title websites data as a return benefit to property identify this client, however in area be transparent in doing so the purpose of telephone and personal between system with clients, understanding client preferences, website information, page advertising and other processing, administrative, and administrative processing, provide all the data, that performance. These information may be for all the personal benefit.
-          </p>
+            We, the Client’s advertising partners, and our service providers may automatically log information about you, your computer or mobile device, and your interaction over time with our Services, our communications, and other online services, such as:
+<ul className="list-disc list-inside space-y-2 ml-4">
+<li>Device Data: Information such as your computer’s or mobile device’s operating system type and version, 
+    manufacturer and model, browser type, screen resolution, RAM and disk size, CPU usage, device type 
+    (e.g., phone, tablet), IP address, unique identifiers (including identifiers used for advertising purposes), 
+    language settings, mobile device carrier, radio/network information (e.g., WiFi, LTE, 4G), and general
+    location information such as city, state, or geographic area.</li>
 
-          <p>
-            You need to be from and you need to be from your own data website contact. Such as this might available with you need to be in line registration forms.
+<li>Online Activity Data: Information such as pages or screens you viewed, how long you spent on a page or screen, 
+    browsing history, navigation paths between pages or screens, access times, duration of access, and whether 
+    you have opened our marketing emails or clicked links within them.</li>
+We use the following tools for automatic data collection:
+<li>Cookies: Text files that websites store on a visitor’s device to uniquely identify the visitor’s browser 
+    or to store information or settings for the purpose of helping you navigate between pages efficiently, 
+    remembering your preferences, enabling functionality, understanding user activity and patterns, and 
+    facilitating online advertising.</li>
+<li>Local Storage Technologies: Such as HTML5, which provide cookie-equivalent functionality and can store larger amounts of data, 
+    including on your device outside of your browser in connection with specific applications.</li>
+<li>Also known as pixel tags or clear GIFs, which are used to demonstrate that a webpage or email was accessed or opened, or that certain content was viewed or clicked.</li>
+          </ul>
           </p>
+          
 
-          <p>
-            "We proven and take from or type of data, where you want to demonstrate that is necessary or local land acquisition of content or that person contact over expected or contact."
-          </p>
+        
         </div>
 
         <div className="space-y-4">
           <h2 className="text-xl font-bold text-gray-800">4. How We Use Your Personal Information</h2>
           <ul className="list-disc list-inside space-y-2 ml-4">
-            <li>Respond to inquiries.</li>
-            <li>To provide with appropriate services to provide, operate, and personal not services and our business.</li>
-            <li>To communicate with the marketing regarding website updates, security alerts, and content and administrative messages.</li>
-            <li>To process applications from website marketing and service request.</li>
-            <li>To answer your calls To connect with applicable laws, rules, requests, and legal processes, also to responsible to submissions or requests from government authorities.</li>
-            <li>To deliver, promote, and enforce our general agreement because or we may use the this information to complete product or service according to you, including through other service providers.</li>
-            <li>To take your information to contact you about other information related to our products and services that might be appropriate, according, process customer service requests, appropriate information, and product or services.</li>
-            <li>Services, and protect, investigate, and issue fraudulent harmful, unwelcome, unlawful, or illegal activity.</li>
-            <li>To process or business such content law and criminal processes which may be stored may be produced from your information. The information may be for our own purposes for our data business purposes and business purposes.</li>
-            <li>As otherwise permitted by law.</li>
+            Rose Kitchens uses your personal information for the following purposes:
+            <li>To Operate and Improve Our Services: To provide, operate, and improve our Services and our business.</li>
+            <li>To Communicate with You: Including sending announcements, updates, security alerts, and support and administrative messages.</li>
+            <li>To Provide Support: To respond to requests, questions, and feedback.</li>
+            <li>To Comply with Law: To comply with applicable laws, lawful requests, and legal processes, such as responding to subpoenas or requests from government authorities.</li>
+            <li>For Marketing: If you have provided your contact information to us or our Client, we may, from time to time, send you direct marketing communications on behalf of our Client as permitted by law, including through phone, email, and text messages. If you would like to opt out of marketing communications, please contact our Client.</li>
+            <li>For Compliance, Fraud Prevention, and Safety: To protect our, your, or others’ rights, privacy, safety, or property (including by making and defending legal claims); enforce the terms and conditions governing our Services; and protect, investigate, and deter fraudulent, harmful, unauthorized, unethical, or illegal activity.</li>
+            <li>To Create Anonymous Data: To convert your personal information into anonymous data by removing personally identifiable information. This anonymous data may be used and shared for our lawful business purposes, including to analyze and improve our Services, conduct research, and promote our business</li>
+            
           </ul>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-xl font-bold text-gray-800">5. How We Share Your Personal Information</h2>
-          <p>
-            Donum will not sell your personal information may be to the type your personal information may have original and providers at the Privacy Policy website might be in our about:</p>
-
-          <p>
-            We will not sell, rent, lease or give your personal information to third parts. - Contact with us might include data from you may give your data to from personal service providers. The information from technology, other through organizations:</p>
-
-          <p>
-            -marketing services, such as inquiry, lawyers, authors, and content where necessary in the course of the professional services they render to us.</p>
-          <p>
-            -other service professionals, such as PR in legal advisors.</p>
-          <p>
-            -subject to legal process or government inquiry (eg subpoenas, court orders)</p>
-          <p>
-            -change of our operations if such cases we will make a reasonable attempt to require the recipient to honor the Privacy Policy</p>
-          <p>
-            -permit or due to a subsequent acquisition, merger, or other consolidation of operations may be subject to different privacy policies.</p>
+          <ul className="list-disc list-inside space-y-2 ml-4">
+          
+            We do not “sell” your personal information, and we may share your personal information as described below and elsewhere in this Privacy Policy:
+            <li>With Our Client: To facilitate your interactions with the Client.</li>
+            <li>With Our Service Providers: Companies and individuals that provide services on our behalf or help us operate our Services or our business (such as hosting, information technology, email delivery, and website analytics services).</li>
+            <li>With Professional Advisors: Such as lawyers, bankers, auditors, and insurers, when necessary in the course of the professional services they render to us.</li>
+            <li>For Compliance, Fraud Prevention, and Safety: As described above.</li>
+            <li>In Business Transfers: In connection with a business transaction (or potential business transaction) such as a corporate divestiture, merger, consolidation, acquisition, reorganization, or sale of assets, or in the event of bankruptcy or dissolution. In such cases, we will make reasonable efforts to require the recipient to honor this Privacy Policy</li>
+            Data will not be shared with third parties for marketing or promotional purposes. We will never disclose sensitive personal information such as phone numbers or SMS consent for marketing purposes.
+         </ul>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-xl font-bold text-gray-800">6. Security</h2>
           <p>
-            We employ a number of technical, organizational, and physical safeguards designed to protect the personal information we collect. However, no security system is completely foolproof, and we cannot guarantee the absolute security of your personal information.
+            We employ a number of technical, organizational, and physical safeguards designed to protect the personal information we collect. However, no security measure is completely foolproof, and we cannot guarantee the absolute security of your personal information
           </p>
 
           <h2 className="text-xl font-bold text-gray-800">7. Children</h2>
           <p>
-            Our Products and Technology use not children under the age of 16. If we become aware that we have collected personal information from a child under 16 without the required parental or guardian consent, we will take steps to delete such information.
-          </p>
+            Our Services are not intended for use by children under the age of 18. If we become aware that we have collected personal information from a child under 18 without the required parental or guardian consent, we will promptly delete that information.</p>
 
           <h2 className="text-xl font-bold text-gray-800">8. Changes to This Privacy Policy</h2>
           <p>
-            We reserve the right to change this Privacy Policy at any time. If we make a material change, we will update the "Last Updated" date indicated this revised policy on the website. We encourage you to review this policy periodically to stay informed about our personal information practices and the choices available to you.
-          </p>
+           We reserve the right to modify this Privacy Policy at any time. If we make material changes, we will update the “Last Updated” date and post the revised policy on this website. We encourage you to review this policy periodically to stay informed about how we are protecting your personal information.
+</p>
 
-          <h2 className="text-xl font-bold text-gray-800">9. How Do We Share Your Media Information?</h2>
+          <h2 className="text-xl font-bold text-gray-800">9. How Do We Share Your Mobile Information?</h2>
           <p>
-            We might share some of the personal from website where and they share per institutions for marketing or promotional purposes. As the above categories provide type managing employees set in data and content this information of products and services where we think you might be interested or may marketing messages by responding "STOP" at any time. For more information, reply "HELP". Message and data rates may apply
-          </p>
+            No mobile information will be obtained from and/or shared with third parties or affiliates for marketing or promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties. You can always decline or stop receiving messages by responding "STOP" at any time. For more information, reply 'HELP'.
+             Message and data rates may apply. Message frequency varies.
+            </p>
 
           <h2 className="text-xl font-bold text-gray-800">10. Contact Information</h2>
           <p>
-            If you have any questions or concerns about this Privacy Policy, please contact Donum Contact at:
+           If you have any questions or concerns about this Privacy Policy, please contact Rose Kitchens at:<br/>
+Email:info@rosekitchen.net<br/>Phone: (845) 418-5588
           </p>
-          <p>
-            Donum Communications<br/>
-            Phone: (855) 555-5555
-          </p>
+          
           </div>
         </div>
       </div>
     </div>
+    <Footer1/>
+    <Footer2/>
+    <Footer3/>
+    </>
   );
 };
+
 
 export default PrivacyPolicy;
