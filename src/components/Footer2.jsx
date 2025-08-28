@@ -97,7 +97,7 @@ const Footer2 = () => {
                   {menuItems.about.map((item, index) => (
                     <li key={index}>
                       <a
-                        href={`https://yourexternalwebsite.com/about/${item.toLowerCase().replace(/\s+/g, '-').replace('/', '')}`}
+                        href={`https://www.rosekitchen.net/about/${item.toLowerCase().replace(/\s+/g, '-').replace('/', '')}`}
                         
                         rel="noopener noreferrer"
                         className="block px-4 py-3 text-sm text-white transition-all duration-150 hover:underline"
@@ -114,7 +114,7 @@ const Footer2 = () => {
           {/* Service */}
           <li>
             <a 
-              href="https://yourexternalwebsite.com/service"
+              href="https://www.rosekitchen.net/service"
               
               rel="noopener noreferrer"
               className="cursor-pointer px-3 py-2 transition-all duration-200 hover:text-red-200 block"
@@ -136,15 +136,15 @@ const Footer2 = () => {
           </li>
 
           {/* Home */}
-        <li>
-  <a 
-    href="https://yourexternalwebsite.com"
-    rel="noopener noreferrer"  // optional for security; you can keep it
+      <li>
+  <button
+    onClick={() => window.location.href = "https://www.rosekitchen.net/home"}
     className="cursor-pointer px-3 py-2 transition-all duration-200 hover:text-red-200 block"
   >
     Home
-  </a>
+  </button>
 </li>
+
 
 
           {/* Categories List with Multi-level Dropdown */}
@@ -176,7 +176,7 @@ const Footer2 = () => {
                       onMouseLeave={handleSubcategoryMouseLeave}
                     >
                       <a
-                        href={`https://yourexternalwebsite.com/categories/${category.toLowerCase().replace(/\s+/g, '-')}`}
+                        href={`https://www.rosekitchen.net/categories/${category.toLowerCase().replace(/\s+/g, '-')}`}
                         
                         rel="noopener noreferrer"
                         className="flex items-center justify-between px-4 py-3 text-sm text-white transition-all duration-150 hover:underline"
@@ -197,7 +197,7 @@ const Footer2 = () => {
                             {subcategories.map((subcategory, subIndex) => (
                               <a
                                 key={subIndex}
-                                href={`https://yourexternalwebsite.com/categories/${category.toLowerCase().replace(/\s+/g, '-')}/${subcategory.toLowerCase().replace(/\s+/g, '-')}`}
+                                href={`https://www.rosekitchen.net/categories/${category.toLowerCase().replace(/\s+/g, '-')}/${subcategory.toLowerCase().replace(/\s+/g, '-')}`}
                                
                                 rel="noopener noreferrer"
                                 className="block px-4 py-3 text-sm text-white transition-all duration-150 hover:underline"
