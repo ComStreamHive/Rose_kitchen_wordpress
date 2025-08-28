@@ -98,7 +98,7 @@ const Footer2 = () => {
                     <li key={index}>
                       <a
                         href={`https://yourexternalwebsite.com/about/${item.toLowerCase().replace(/\s+/g, '-').replace('/', '')}`}
-                        target="_blank"
+                        
                         rel="noopener noreferrer"
                         className="block px-4 py-3 text-sm text-white transition-all duration-150 hover:underline"
                       >
@@ -115,7 +115,7 @@ const Footer2 = () => {
           <li>
             <a 
               href="https://yourexternalwebsite.com/service"
-              target="_blank"
+              
               rel="noopener noreferrer"
               className="cursor-pointer px-3 py-2 transition-all duration-200 hover:text-red-200 block"
             >
@@ -127,7 +127,7 @@ const Footer2 = () => {
           <li>
             <a 
               href="/contact"
-              target="_blank"
+              
               rel="noopener noreferrer"
               className="cursor-pointer px-3 py-2 transition-all duration-200 hover:text-red-200 block"
             >
@@ -136,16 +136,16 @@ const Footer2 = () => {
           </li>
 
           {/* Home */}
-          <li>
-            <a 
-              href="https://yourexternalwebsite.com/home"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer px-3 py-2 transition-all duration-200 hover:text-red-200 block"
-            >
-              Home
-            </a>
-          </li>
+        <li>
+  <a 
+    href="https://yourexternalwebsite.com"
+    rel="noopener noreferrer"  // optional for security; you can keep it
+    className="cursor-pointer px-3 py-2 transition-all duration-200 hover:text-red-200 block"
+  >
+    Home
+  </a>
+</li>
+
 
           {/* Categories List with Multi-level Dropdown */}
           <li 
@@ -177,7 +177,7 @@ const Footer2 = () => {
                     >
                       <a
                         href={`https://yourexternalwebsite.com/categories/${category.toLowerCase().replace(/\s+/g, '-')}`}
-                        target="_blank"
+                        
                         rel="noopener noreferrer"
                         className="flex items-center justify-between px-4 py-3 text-sm text-white transition-all duration-150 hover:underline"
                       >
@@ -198,7 +198,7 @@ const Footer2 = () => {
                               <a
                                 key={subIndex}
                                 href={`https://yourexternalwebsite.com/categories/${category.toLowerCase().replace(/\s+/g, '-')}/${subcategory.toLowerCase().replace(/\s+/g, '-')}`}
-                                target="_blank"
+                               
                                 rel="noopener noreferrer"
                                 className="block px-4 py-3 text-sm text-white transition-all duration-150 hover:underline"
                               >
@@ -249,8 +249,7 @@ const Footer2 = () => {
                   {menuItems.account.map((item, index) => (
                     <a
                       key={index}
-                      href={`https://yourexternalwebsite.com/account/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                      target="_blank"
+                      
                       rel="noopener noreferrer"
                       className="block px-4 py-3 text-sm text-white transition-all duration-150 hover:underline"
                     >

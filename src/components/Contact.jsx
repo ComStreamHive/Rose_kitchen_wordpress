@@ -23,15 +23,24 @@ const ContactComponent = () => {
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.fullName.trim()) newErrors.fullName = 'Full name is required';
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required';
-    } else if (!/^[\+]?[\d\s\-\(\)]{10,}$/.test(formData.phone.trim())) {
-      newErrors.phone = 'Please enter a valid phone number';
+    
+    // Full name is mandatory
+    if (!formData.fullName.trim()) {
+      newErrors.fullName = 'Full name is required';
     }
-    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+    
+    // Email is mandatory
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email address is required';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
     }
+    
+    // Phone is optional but validate format if provided
+    if (formData.phone.trim() && !/^[\+]?[\d\s\-\(\)]{10,}$/.test(formData.phone.trim())) {
+      newErrors.phone = 'Please enter a valid phone number';
+    }
+    
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -142,7 +151,7 @@ const ContactComponent = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 uppercase tracking-wide mb-3">
-                Email Address
+                Email Address *
               </label>
               <input
                 type="email"
@@ -161,14 +170,14 @@ const ContactComponent = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 uppercase tracking-wide mb-3">
-                Phone Number *
+                Phone Number (Optional)
               </label>
               <input
                 type="tel"
                 name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
-                placeholder="+1 (555) 000-0000"
+                placeholder="(optional)"
                 className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition-colors text-base ${
                   errors.phone ? 'border-red-500' : 'border-gray-300'
                 }`}

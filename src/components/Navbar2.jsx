@@ -20,7 +20,7 @@ const Navbar2 = () => {
       'Refrigeration': ['Walk-in Coolers', 'Display Cases', 'Under-counter Fridges', 'Freezers'],
       'Storage Solutions': ['Shelving Units', 'Food Storage', 'Cabinets', 'Mobile Storage']
     },
-    account: ['My Profile', 'Order History', 'Wishlist', 'Account Settings', 'Logout']
+    account: ['Order Tracking']
   };
 
   const handleMouseEnter = (item) => {
@@ -68,11 +68,17 @@ const Navbar2 = () => {
     <nav className="sticky top-0 bg-white shadow-md px-8 py-6 flex items-center justify-between relative z-50">
       {/* Logo Section - Left Side */}
       <div className="flex items-center">
-        <img
-          src={logo}
-          alt="Rose Kitchen Logo"
-          className="h-18"
-        />
+        <a 
+          href="https://www.rosekitchen.net"
+          rel="noopener noreferrer"
+          className="cursor-pointer"
+        >
+          <img
+            src={logo}
+            alt="Rose Kitchen Logo"
+            className="h-18"
+          />
+        </a>
       </div>
 
       {/* Nav Links - Right Side */}
@@ -105,7 +111,6 @@ const Navbar2 = () => {
           <li key={index}>
             <a
               href={`https://www.rosekitchen.net/about/${item.toLowerCase().replace(/\s+/g, '-').replace('/', '')}`}
-              target="_blank"
               rel="noopener noreferrer"
               className="block px-4 py-3 text-sm text-white transition-all duration-150 hover:bg-[#C01E36]"
             >
@@ -122,7 +127,6 @@ const Navbar2 = () => {
         <li>
           <a 
             href="https://www.rosekitchen.net/service"
-            target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer px-3 py-2 rounded transition-all duration-200 block"
             onMouseOver={(e) => {
@@ -142,7 +146,7 @@ const Navbar2 = () => {
         <li>
           <a 
             href="/contact"
-            target="_blank"
+            
             rel="noopener noreferrer"
             className="cursor-pointer px-3 py-2 rounded transition-all duration-200 block"
             onMouseOver={(e) => {
@@ -162,7 +166,7 @@ const Navbar2 = () => {
         <li>
           <a 
             href="https://www.rosekitchen.net/home"
-            target="_blank"
+            
             rel="noopener noreferrer"
             className="cursor-pointer px-3 py-2 rounded transition-all duration-200 block"
             onMouseOver={(e) => {
@@ -211,7 +215,7 @@ const Navbar2 = () => {
           >
             <a
               href={`https://www.rosekitchen.net/categories/${category.toLowerCase().replace(/\s+/g, '-')}`}
-              target="_blank"
+              
               rel="noopener noreferrer"
               className="flex items-center justify-between px-4 py-3 text-sm text-white transition-all duration-150 hover:bg-[#C01E36]"
             >
@@ -230,7 +234,7 @@ const Navbar2 = () => {
                     <a
                       key={subIndex}
                       href={`https://www.rosekitchen.net/categories/${category.toLowerCase().replace(/\s+/g, '-')}/${subcategory.toLowerCase().replace(/\s+/g, '-')}`}
-                      target="_blank"
+                      
                       rel="noopener noreferrer"
                       className="block px-4 py-3 text-sm text-white transition-all duration-150 hover:bg-[#C01E36]"
                     >
@@ -296,7 +300,7 @@ const Navbar2 = () => {
                   <a
                     key={index}
                     href={`https://www.rosekitchen.net/account/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                    target="_blank"
+                    
                     rel="noopener noreferrer"
                     className="block px-4 py-3 text-sm text-white transition-all duration-150 hover:underline"
                   >
@@ -325,26 +329,7 @@ const Navbar2 = () => {
             Privacy Policy
           </a>
         </li>
-
-        {/* Test */}
-        <li>
-          <a 
-            href="https://www.rosekitchen.net/test"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer px-3 py-2 rounded transition-all duration-200 block"
-            onMouseOver={(e) => {
-              e.target.style.backgroundColor = customRed;
-              e.target.style.color = 'white';
-            }}
-            onMouseOut={(e) => {
-              e.target.style.backgroundColor = 'transparent';
-              e.target.style.color = '';
-            }}
-          >
-            Test
-          </a>
-        </li>
+        
       </ul>
     </nav>
   );
