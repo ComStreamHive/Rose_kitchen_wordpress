@@ -227,7 +227,7 @@ const ContactComponent = () => {
                   className="mt-1 w-5 h-5 text-red-600 border-gray-300 rounded focus:ring-red-500"
                 />
                 <label htmlFor="emailConsent" className="text-[15px] text-gray-600 leading-relaxed">
-                  I consent to receive text messages about appointment reminders, and service notification from Rose kitchen at the phone number I provided. I acknowledge that my consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Reply HELP for assistance or STOP to opt out of receiving messages{' '}
+                  I consent to receive marketing text messages, such as promotional offers, discounts, and sales events from Rose Kitchen at the phone number I provided, including messages sent via auto dialer. I understand that my consent is not a condition of purchase. Msg & data rates may apply. Msg frequency may vary. Reply HELP for assistance or STOP to opt out of receiving messages.{' '}
                   <Link 
                     to="/privacypolicy" 
                     className="text-red-600 hover:text-red-700 underline"
