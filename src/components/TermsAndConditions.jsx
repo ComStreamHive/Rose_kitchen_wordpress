@@ -115,7 +115,7 @@ const TermsOfService = () => {
           <h2 className="text-xl font-bold text-gray-800"> Questions or Concerns</h2>
           <p>
             For any questions or concerns, please contact us at:<br/>
-            Email:info@rosekitchen.ne<br/>
+            Email:info@rosekitchen.net<br/>
             Phone: (845) 418-5588
           </p>
           

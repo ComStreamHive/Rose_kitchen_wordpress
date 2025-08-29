@@ -255,8 +255,8 @@ const ContactComponent = () => {
                   className="mt-1 w-5 h-5 text-red-600 border-gray-300 rounded focus:ring-red-500"
                 />
                 <label htmlFor="marketingConsent" className="text-[15px] text-gray-600 leading-relaxed">
-                 <b> SignUp for Emails and phone calls</b><br/>
-                 I agree to receive emails and phone calls.
+                 
+                 I consent to receive marketing emails and phone communications.
                 </label>
               </div>
             </div>
